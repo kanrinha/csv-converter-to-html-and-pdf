@@ -1,0 +1,23 @@
+{
+  "name": "csv-convert-to-html-and-pdf",
+  "version": "1.0.0",
+  "description": "Convertendo excel (csv) para HTML e PDF",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [
+    "converter",
+    "excel-to-html",
+    "excel-to-pdf",
+    "csv-to-pdf"
+  ],
+  "author": "Anderson-TI-Lim",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.3",
+    "html-pdf": "^2.2.0",
+    "readline-sync": "^1.4.10"
+  }
+}

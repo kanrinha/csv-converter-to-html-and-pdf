@@ -20,6 +20,13 @@ import Converter from "./modules/Converter.js"
 
     const options = ["CSV to HTML", "CSV to PDF", "CSV to HTML and PDF"]
     const chosenOption = readLineSync.keyInSelect(options, "Do you want to convert to what? ")
-    const fileName = readLineSync.question("What the file name is? ")
+    
+    const fileName = chosenOption != -1 ? (
+        readLineSync.question("What the file name is? ")
+    ) : ( 
+        console.log("\u001b[31m Bye Bye!"),
+        process.exit()
+    )
+
     optionManager(chosenOption, fileName)
 })()
